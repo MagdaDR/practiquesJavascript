@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Exercici Javascript</title>
+  </head>
+
+  <body>
+
+
+    <!-- Optional JavaScript -->  
+    <script>
+      
+      // Exercici 1
+      console.log("Exercici 1")
+      var lema = "Hello world";
+      console.log(lema);
+
+      // Exercici 2
+      console.log("Exercici 2")
+      alert("Em dic Magda");
+
+      // Exercici 3
+      console.log("Exercici 3")
+      var nom = "Magda";
+      var cognom = "Dalmau";
+      console.log(nom + " " + cognom);
+
+      // Exercici 4
+      console.log("Exercici 4")
+      var valor1 = 45;
+      var valor2 = 10;
+      var suma = valor1 + valor2;
+      alert("La suma de " + valor1 + " i " + valor2 +  " és " + suma);
+
+      // Exercici 5
+      console.log("Exercici 5")
+      var nota_examen =6.5;
+      if (nota_examen < 5)
+        alert("Nota = " + nota_examen + ". Has SUSPÉS");
+      else
+        alert("Nota = " + nota_examen + ". Has APROVAT");
+
+      // Exercici 6
+      console.log("Exercici 6")
+      cadena_text = "Tinc un cotxe de color blau";
+      console.log(cadena_text);
+
+      cadena_text2 = cadena_text.replace("blau", "verd");
+      console.log(cadena_text2);
+      cadena_text3 = cadena_text2.replace(/o/g, "u");
+      console.log(cadena_text3);
+
+      // Exercici 7
+      console.log("Exercici 7");
+      taulaObj = ["taula",",cadira","ordinador","llibreta"];
+      console.log(taulaObj)
+      for (i = 1; i <= taulaObj.length; i++) {  
+        console.log("L'objecte " + taulaObj[i-1], "es troba a la posició " + i );
+      }
+      
+
+      // Exercici 8
+      console.log("Exercici 8");
+
+      function calculadora(operador, a, b){
+        switch(operador) {
+          case "sum":
+            res = a + b;
+            break;
+          case "res":
+            res = a - b;
+            break;
+          case "mul":
+            res = a * b;
+            break;
+          case "div":
+            res = a / b;
+            break;
+          default:
+          	console.log("Error. Escriu sum, res, mul o div")
+        }
+        return res;
+      }
+      
+      calculadora("sum",12,2);
+      console.log("12 + 2 =" + res);
+      calculadora("res",12,2);
+      console.log("12 - 2 = " + res);
+      calculadora("mul",12,2);
+      console.log("12 * 2 =" + res);
+      calculadora("div",12,2);
+      console.log("12 / 2 = " + res);
+      
+
+    </script>
+
+  </body>
+</html>
