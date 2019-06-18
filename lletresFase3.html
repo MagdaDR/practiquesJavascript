@@ -1,0 +1,42 @@
+<!--
+FASE 3
+Emmagatzemar en un Map tant les lletres de la llista (o array) com el nombre de vegades que apareixen
+
+-->
+
+!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Exercici Javascript Fase3</title>
+  </head>
+
+  <body>
+    <!-- Optional JavaScript -->  
+
+    <script>
+    	//No controla els epais
+     	var nom = prompt("Entra un nom: ");     	
+     	var lletres = new Map();
+     	var total = 0;
+     	
+     	for ( var i = 0 ; i < nom.length ; i++){
+
+     		// ja existeix, es suma la quantitat en 1
+     		if ( lletres.has(nom[i]) ) {
+				var total = lletres.get(nom[i]);
+				lletres.set(nom[i], total+1);
+     			
+     		}else{
+     			// primera recurrència, es graba lletra i quantitat = 1
+     			lletres.set(nom[i], 1);     			
+     		}     		     		
+     	}
+     	console.log(lletres);
+    </script>
+
+  </body>
+</html>
