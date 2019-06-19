@@ -1,0 +1,73 @@
+<!--
+FASE 2
+Al bucle, si la lletra és una vocal imprimeix a la consola: ‘He trobat la VOCAL: __’. Sinó, imprimeix: ‘He trobat la CONSONTANT: __’.
+Si trobes un numero, mostra per pantalla: ‘Els noms de persones no contenen el número: __’.
+
+-->
+
+!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Exercici Javascript</title>
+  </head>
+
+  <body>
+    <!-- Optional JavaScript -->  
+
+    <script>
+    	//No controla els epais
+     	var nom = prompt("Entra un nom: ");
+     	var lletra;
+
+        for ( var i = 0 ; i < nom.length ; i++ ) {
+            lletra = nom[i];
+            lletra.toLowerCase();
+            if ( !isNaN(lletra) ){
+                // Si és número
+                console.log("Els noms reals de persones no contenen números com el " + nom[i]);   
+            }else if 
+               (
+               lletra === 'a' || 
+               lletra === 'e' ||
+               lletra === 'i' ||
+               lletra === 'o' ||
+               lletra === 'u'              
+                ){
+                // vocal
+                console.log("He trobat la VOCAL: " + nom[i]);
+            }
+            else {
+                // consonant
+                console.log("He trobat la CONSONANT: " + nom[i])
+            }
+        }
+     	/*
+        for ( var i = 0 ; i <= nom.length - 1 ; i++ ) {
+            lletra = nom[i];
+            lletra.toLowerCase();
+            if ( 
+                (lletra === 'a' || 
+               lletra === 'e' ||
+               lletra === 'i' ||
+               lletra === 'o' ||
+               lletra === 'u')
+                && isNaN(lletra) 
+                ){
+
+                console.log("He trobat la VOCAL: " + nom[i]);
+            }
+            else if ( isNaN(lletra) ) {
+                console.log("He trobat la CONSONANT: " + nom[i]);
+            }else{
+                console.log("Els noms reals de persones no contenen números com el " + nom[i]);
+            }
+        }
+        */
+    </script>
+
+  </body>
+</html>
