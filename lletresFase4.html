@@ -1,0 +1,41 @@
+<!--
+FASE 4
+● Crea una altra llista amb el teu cognom on cada posició correspongui a una lletra.
+● Fusiona les dues llistes en una sola. A més, afegeix una posició amb un espai buit entre la primera i la
+segona. És a dir, partim de la llista name i surname i al acabar l’execució només tindrem una que es dirà
+fullName.
+-->
+
+!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Exercici Javascript Fase4</title>
+  </head>
+
+  <body>
+    <!-- Optional JavaScript -->  
+
+    <script>
+    	
+     	var nom = prompt("Entra un nom: ");
+     	var cognom = prompt("Entra un cognom: ");
+     	//var nomCognom = [nom , cognom];
+     	var nomCognom = nom + " " + cognom;
+     	var nomCognomArray = [];
+
+     	for ( var i=0 ; i < nomCognom.length ; i++ ){
+     		
+     			nomCognomArray.push(nomCognom[i]);
+     	}
+     	
+     	console.log(nomCognom);
+     	console.log(nomCognomArray);
+     	
+    </script>
+
+  </body>
+</html>
