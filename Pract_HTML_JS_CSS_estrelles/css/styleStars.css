@@ -1,63 +1,54 @@
+/*  --- Definicio de colors ---
+    fde74c  : groc clar;
+    #fee327 : grc mica més fosc;
+    #5bc0eb : blau;
+    9bc53d  : verd;
+    e55934  : vermell;                        
+    */
+
+/*  --- CSS --- */
+    body {
+        overflow: hidden;
+        background-color: #5bc0eb;
+        color: #fde74c;
+        font-size: 3em;
+    }
+
+    .center {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;                
+        align-items: center;
+    }
 /*
-            fde74c  : groc clar;
-            #fee327 : grc mica més fosc;
+    span { 
+        color: #fde74c;    
+        display: inline-block;
+        float: right;
+        font-size: 3em;
+        color: #fde74c;        
+        opacity: 0.5;   
+    }
 
-          
-            #5bc0eb : blau;
-            9bc53d  : verd;
-            e55934  : vermell;
-            
-            
-            */
+     span[data-frefix='far'] {
+        color: #fde74c;        
+        font-weight: 900;
+        font-size: 3em;  
+    }
 
-            body {
-                overflow: hidden;
-                background-color: #5bc0eb;
-                color: #fde74c;
-                font-size: 3em;
-            }
+    span[data-frefix='fas'] {
+        color: #fa7921;        
+        font-weight: 900;
+        font-size: 3em;  
+    }
 
-            .center {
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-
-
-            /*
-            span { 
-                color: #fde74c;    
-                display: inline-block;
-                float: right;
-                font-size: 3em;
-                color: #fde74c;
-                margin: 10px;
-                border-right: 50px;
-                opacity: 0.5;
-            }
-            
-            span:hover {
-                background-color: #fde74c;
-                transition: 0.8s;
-                font-weight: 900;
-                opacity: 1;
-            }
-            */
-            
-            
-            span[data-frefix='far'] {
-                color: #fde74c;
-                
-                font-weight: 900;
-                font-size: 3em;  
-            }
-
-            span[data-frefix='fas'] {
-                color: #fa7921;
-                
-                font-weight: 900;
-                font-size: 3em;  
-            }
+               
+    span:hover {
+        background-color: #fde74c;
+        transition: 0.8s;
+        font-weight: 900;
+        opacity: 1;
+    }
+    */
